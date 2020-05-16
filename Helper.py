@@ -73,7 +73,7 @@ class SetUp:
             else:
                 num = num | 0x0000
         else:
-            print("You Smell!! Use a correct bit length!!!!")
+            print("Incorrect Bit Length")
 
         return num
 
