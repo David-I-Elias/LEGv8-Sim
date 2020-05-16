@@ -166,7 +166,7 @@ class Disassembler:
                 self.opcodeStr.append("STUR")
                 self.arg1.append((int(instructions[i], base=2) & self.rnMask) >> 5)
                 self.arg2.append((int(instructions[i], base=2) & self.addrMask) >> 12)
-                self.arg3.append((int(instructions[i], base=2) & self.rdMask) >> 0) # Rd even though Rt
+                self.arg3.append((int(instructions[i], base=2) & self.rdMask) >> 0)
                 self.arg1Str.append("\tR" + str(self.arg3[i]))
                 self.arg2Str.append(", [R" + str(self.arg1[i]))
                 self.arg3Str.append(", #" + str(self.arg2[i]) + "]")
@@ -196,8 +196,8 @@ class Disassembler:
             elif (opcode[i] >= 1440 and opcode[i] <= 1447):
                 self.instrSpaced.append(SetUp.bin2StringSpacedCB(instructions[i]))
                 self.opcodeStr.append("CBZ")
-                self.arg1.append(SetUp.imm_bit_to_32_bit_converter((int(instructions[i], base=2)& self.addr2Mask) >> 5, 19)) # needs to be shifted then copied in
-                self.arg2.append((int(instructions[i], base=2) & self.rdMask) >> 0) # would this be addr2Mask?
+                self.arg1.append(SetUp.imm_bit_to_32_bit_converter((int(instructions[i], base=2)& self.addr2Mask) >> 5, 19)) 
+                self.arg2.append((int(instructions[i], base=2) & self.rdMask) >> 0) 
                 self.arg3.append(0)
                 self.arg1Str.append("\tR" + str(self.arg2[i]))
                 self.arg2Str.append(", #" + str(self.arg1[i]))
@@ -206,8 +206,8 @@ class Disassembler:
             elif (opcode[i] >= 1448 and opcode[i] <= 1455):
                 self.instrSpaced.append(SetUp.bin2StringSpacedCB(instructions[i]))
                 self.opcodeStr.append("CBNZ")
-                self.arg1.append(SetUp.imm_bit_to_32_bit_converter((int(instructions[i], base=2)& self.addr2Mask) >> 5, 19)) # needs to be shifted then copied in
-                self.arg2.append((int(instructions[i], base=2) & self.rdMask) >> 0) # would this be addr2Mask?
+                self.arg1.append(SetUp.imm_bit_to_32_bit_converter((int(instructions[i], base=2)& self.addr2Mask) >> 5, 19)) 
+                self.arg2.append((int(instructions[i], base=2) & self.rdMask) >> 0) 
                 self.arg3.append(0)
                 self.arg1Str.append("\tR" + str(self.arg2[i]))
                 self.arg2Str.append(", #" + str(self.arg1[i]))
