@@ -43,17 +43,17 @@ team2_out_sim.txt:
 	This file shows the simulated run of the translated machine code.
 Looking at an isolated cycle of the simulation we can see the following. Reading from left to right, top to bottom:
 
-						===============
-						cycle:1	96	ADDI	R4, R4, #160
+					===============
+					cycle:1	96	ADDI	R4, R4, #160
 
-						registers:
-						r00:	0	0	0	0	160	0	0	0
-						r08:	0	0	0	0	0	0	0	0
-						r16:	0	0	0	0	0	0	0	0
-						r24:	0	0	0	0	0	0	0	0
+					registers:
+					r00:	0	0	0	0	160	0	0	0
+					r08:	0	0	0	0	0	0	0	0
+					r16:	0	0	0	0	0	0	0	0
+					r24:	0	0	0	0	0	0	0	0
 
-						data:
-						176:-1	-2	-3
+					data:
+					176:-1	-2	-3
 
 
 Firstly the cycle counter, which increments with each instruction processed. Currently, since we are looking at the first instruction processed this is 1.
