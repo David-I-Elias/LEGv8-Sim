@@ -24,7 +24,7 @@ HOW TO RUN:
 2. Unzip and extract the project to your directory of choice
 3. Open the terminal(linux/OSX) or Command Prompt(Windows)
 4. Change directory to where you've saved the project. 
-5. Enter into the terminal : team2_project2.py -i "C:/(PathToFileLocation)/Project2/test3a_bin.txt" -o "team2_out"
+5. Enter into the terminal : python team2_project2.py -i "C:/(PathToFileLocation)/Project2/test3a_bin.txt" -o "team2_out"
 5a. Note that (PathToFileLocation) needs to be the path to where you've saved the project.
 6. Hit Enter
 7. Output files are saved and updated in the project folder.
