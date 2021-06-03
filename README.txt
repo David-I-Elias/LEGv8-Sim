@@ -5,14 +5,13 @@ Angela Phillips amp395
 ===========
 input file:
 ===========
-test3a_bin $ python team2_project2.py -i test1_bin.txt -o team2_out_sim
+test3a_bin
 
 ===========
 output files:
 ===========
 team2_outdis, 
 team2_out_sim, 
-team2_out_pipeline.txt
 
 ================================================================================================================================================================================
 Program reads in binary code from an input file (test3a_bin) and translates to ARM: LEGv8 assembly language, then writes the translated ARM assembly to a file(team2_outdis).
