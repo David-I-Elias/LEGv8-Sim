@@ -1,3 +1,8 @@
+# This File serves as the main translator for the project. 
+# Raw binary instructions are read in from the input file and
+# translated to ARM instructions here. Once all instructions
+# have been translated they are returned as a Dict
+
 from Helper import SetUp
 import os
 import Masking_Constants as MASKs
