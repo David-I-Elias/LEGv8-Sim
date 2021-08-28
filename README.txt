@@ -60,7 +60,7 @@ Firstly the cycle counter, which increments with each instruction processed. Cur
 
 Next we have the program counter. This starts at 96 and is incremented by 4 every instuction.
 
-Following the program counter is the instruction being processed.
+Following the program counter is the instruction being processed; ADDI R4,R4, #160 in this case.
 
 Below the first line we have a table displaying the registers and their contents. 32 registers are displayed in total with 8 registers listed per row. Registers are
 zero based, so the first row of registers (r00) contains registers r0 - r7 and so on.
