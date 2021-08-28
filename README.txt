@@ -66,5 +66,11 @@ Below the first line we have a table displaying the registers and their contents
 zero based, so the first row of registers (r00) contains registers r0 - r7 and so on.
 
 At the very bottom of each cycle is the data found after the break instruction. The number preceding the data (176 in this case) is where the data is located on the program counter. 
+=================================================================================================================================================================================
+
+For more information on each file individually, read the comment block at the top of each file.
+
+
+
 
 
